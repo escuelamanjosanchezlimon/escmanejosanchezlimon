@@ -19,9 +19,12 @@
         <li onclick="irAServicios()" ><a href="#">Servicios</a></li>
         <li  onclick="irAcontacto()"><a href="#" >Contacto</a></li>
         <li onclick="irAinfo()"><a href="#">Info App</a></li>
+        <li onclick="logout()"><a href="#">Cerrar sesión</a></li>
+
+
       </ul>
     </nav>
-    <main>
+    <main id="main">
       <article id="article1">
         <h2 id="titulo">Prepárate para tu examen</h2>
         <p id="parrafo">
@@ -106,8 +109,8 @@
 
     </footer>
     
-    
-    <script id="scr" src="function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script id="scr" src="scripts.min.js"></script>
 
 <script>
 </script>
