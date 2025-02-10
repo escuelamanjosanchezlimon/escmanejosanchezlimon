@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <link rel="icon" href="https://github.com/adminsanchez2025/ico-eduvial/blob/main/mainIco.png?raw=true" type="image/x-icon">
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google" content="notranslate">
     <title>EscuelaManejoSanchezLimón</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+
     <link rel="stylesheet" href="styles.css" />
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </head>
   <body>
+    
     <header>
       <h1 id="titulo-principal">Escuela de manejo</h1>
-      <button class="hamburger" id="hamburger-btn">☰</button>
+      <div class="hamburger-menu">
+
+        <button class="hamburger" id="hamburger-btn">☰</button>
+
+      <div class="dropdown-menu" id="dropdown-menu">
+         
+  
+        <a id="opcion5"   onclick="Be()">🔙 Cerrar sesión</a>
+        
+        <a id="opcion5"   onclick="he()">ℹ️ Información</a>
+
+
+      </div>
+    </div>
+      
     </header>
     <nav id="navbar">
       <ul>
-        <li onclick="salir()"><a href="#" >Inicio</a></li>
-        <li onclick="irAServicios()" ><a href="#">Servicios</a></li>
-        <li  onclick="irAcontacto()"><a href="#" >Contacto</a></li>
-        <li onclick="irAinfo()"><a href="#">Info App</a></li>
-        <li onclick="logout()"><a href="#">Cerrar sesión</a></li>
-
+        <li onclick="R()"><a href="#"><span class="material-symbols-outlined">exit_to_app</span>Inicio</a></li>
+        <li onclick="xe()"><a href="#"><span class="material-symbols-outlined">Info</span>Servicios</a></li>
+        <li onclick="Le()"><a href="#"><span class="material-symbols-outlined">call</span>Contacto</a></li>
 
       </ul>
     </nav>
@@ -43,6 +61,8 @@
         <div id="div-button-container">
           <button id="btn-examen" class="button-complement"> <p class="button-emoji">📝</p>  <b>Examen aleatorio</b></button>
           <button id="btn-avance" class="button-complement"> <p class="button-emoji">📈</p>  <b>Avance</b></button>
+          <button id="tema0" class="button-option"> <p class="button-emoji">👮‍♂️ </p>  <b>Señalizaciones</b></button>
+
           <button id="tema1" class="button-option"> <p class="button-emoji">📚</p>  <b>1. Aspectos generales del tránsito y la seguridad vial</b></button>
           <button id="tema2" class="button-option"> <p class="button-emoji">🚫</p> <b>2. Legislación de tránsito</b></button>
           <button id="tema3" class="button-option"><p class="button-emoji">🛣️</p> <b>3. Factor vía y su entorno</b></button>
@@ -53,7 +73,6 @@
           <button id="tema8" class="button-option"><p class="button-emoji">♻️</p><b> 8. El conductor y la contaminación ambiental</b></button>
           <button id="tema9" class="button-option"><p class="button-emoji">💹</p> <b>9. Conducción técnica económica eficiente</b></button>
           <button id="tema10" class="button-option"><p class="button-emoji">🏍️</p> <b>10. Conducción en motocicleta</b></button>
-
         </div>
       </div>
 
@@ -91,7 +110,7 @@
         
     
     <div class="chart-container" id="chart-container"></div>
-    <div  class='div-c'><button id="btn-clearItem" onclick="eliminarProgreso()" style="display: none;">Eliminar progreso</button></div>
+    <div  class='div-c'><button id="btn-clearItem" onclick="pe()" style="display: none;">Eliminar progreso</button></div>
     <div  class='div-c'><button id="btn-next" onclick="" style="display: none;">Siguiente</button></div>
 
     <div id="countdown"></div>
@@ -110,7 +129,7 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
-    <script id="scr" src="function.js"></script>
+    <script id="scr" src="a.js"></script>
 
 <script>
 </script>
